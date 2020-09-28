@@ -181,7 +181,7 @@ class KeyVaultMgmtScenarioTest(ScenarioTest):
 
 
 class KeyVaultKeyScenarioTest(ScenarioTest):
-    @ResourceGroupPreparer(name_prefix='cli_test_keyvault_key',location='westus')
+    @ResourceGroupPreparer(name_prefix='cli_test_keyvault_key', location='westus')
     def test_keyvault_key(self, resource_group):
         self.kwargs.update({
             'kv': self.create_random_name('cli-test-kv-key-', 24),
@@ -781,7 +781,7 @@ class KeyVaultCertificateScenarioTest(ScenarioTest):
             self.check('policy.x509CertificateProperties.validityInMonths', 60),
             self.check('name', 'cert1')
         ])
-        
+   
         # delete certificate
         self.cmd('keyvault certificate delete --vault-name {kv} -n cert1')
 

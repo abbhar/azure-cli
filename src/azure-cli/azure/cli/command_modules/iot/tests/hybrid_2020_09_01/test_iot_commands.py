@@ -20,7 +20,7 @@ class IoTHubTest(ScenarioTest):
     @AllowLargeResponse()
     @ResourceGroupPreparer(location='westus2')
     @StorageAccountPreparer()
-    @unittest.skip('Need to try with passing SAS key in environment.') # TODO
+    @unittest.skip('Need to try with passing SAS key in environment.')  # TODO
     def test_iot_hub(self, resource_group, resource_group_location, storage_account):
         hub = 'iot-hub-for-test-11'
         rg = resource_group
@@ -394,7 +394,7 @@ class IoTHubTest(ScenarioTest):
     @AllowLargeResponse()
     @ResourceGroupPreparer(location='westus2')
     @StorageAccountPreparer()
-    @unittest.skip('Need to try with passing SAS key in environment.') # TODO
+    @unittest.skip('Need to try with passing SAS key in environment.')  # TODO
     def test_identity_hub(self, resource_group, resource_group_location, storage_account):
         # Test IoT Hub create with identity
         subscription_id = self._get_current_subscription()

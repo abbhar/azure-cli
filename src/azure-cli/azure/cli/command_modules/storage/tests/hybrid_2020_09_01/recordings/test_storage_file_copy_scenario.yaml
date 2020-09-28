@@ -1,0 +1,532 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - storage account keys list
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      ParameterSetName:
+      - -n -g --query -o
+      User-Agent:
+      - python/3.8.5 (Windows-10-10.0.19041-SP0) msrest/0.6.18 msrest_azure/0.6.3
+        azure-mgmt-storage/11.1.0 Azure-SDK-For-Python AZURECLI/2.11.1
+      accept-language:
+      - en-US
+    method: POST
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Storage/storageAccounts/clitest000002/listKeys?api-version=2019-06-01
+  response:
+    body:
+      string: '{"keys":[{"keyName":"key1","value":"veryFakedStorageAccountKey==","permissions":"FULL"},{"keyName":"key2","value":"veryFakedStorageAccountKey==","permissions":"FULL"}]}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '288'
+      content-type:
+      - application/json
+      date:
+      - Mon, 28 Sep 2020 19:32:09 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-Azure-Storage-Resource-Provider/1.0,Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-subscription-resource-requests:
+      - '11998'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:09 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000003?restype=share
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Mon, 28 Sep 2020 19:32:10 GMT
+      etag:
+      - '"0x8D863E5318C3D3D"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:10 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:10 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000004?restype=share
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Mon, 28 Sep 2020 19:32:10 GMT
+      etag:
+      - '"0x8D863E531D53441"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:10 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:11 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000003/dir1?restype=directory
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Mon, 28 Sep 2020 19:32:11 GMT
+      etag:
+      - '"0x8D863E532167E6A"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:11 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-server-encrypted:
+      - 'true'
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:11 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000004/dir2?restype=directory
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Mon, 28 Sep 2020 19:32:11 GMT
+      etag:
+      - '"0x8D863E532682FAC"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:11 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-server-encrypted:
+      - 'true'
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-content-length:
+      - '524288'
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:12 GMT
+      x-ms-type:
+      - file
+      x-ms-version:
+      - '2018-11-09'
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000003/dir1/source_file.txt
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Mon, 28 Sep 2020 19:32:11 GMT
+      etag:
+      - '"0x8D863E532BC7979"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:12 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-server-encrypted:
+      - 'true'
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '!!! The request body has been omitted from the recording because its size
+      524288 is larger than 128KB. !!!'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '524288'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:12 GMT
+      x-ms-range:
+      - bytes=0-524287
+      x-ms-version:
+      - '2018-11-09'
+      x-ms-write:
+      - update
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000003/dir1/source_file.txt?comp=range
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      content-md5:
+      - WQcVkAmdId1DmJZZIzi/lQ==
+      date:
+      - Mon, 28 Sep 2020 19:32:11 GMT
+      etag:
+      - '"0x8D863E532F8CA1E"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:12 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-request-server-encrypted:
+      - 'true'
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:13 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: HEAD
+    uri: https://clitest000002.file.core.windows.net/share000003/dir1/source_file.txt
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '524288'
+      content-type:
+      - application/octet-stream
+      date:
+      - Mon, 28 Sep 2020 19:32:12 GMT
+      etag:
+      - '"0x8D863E532F8CA1E"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:12 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-server-encrypted:
+      - 'true'
+      x-ms-type:
+      - File
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-copy-source:
+      - https://clitests4rrdxjs57j77fsv6.file.core.windows.net/sharebeemeulgnu5haeailjn/dir1/source_file.txt
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:13 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000004/dir2/destination_file.txt
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Mon, 28 Sep 2020 19:32:13 GMT
+      etag:
+      - '"0x8D863E533893D83"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:13 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-copy-id:
+      - 8da09398-bc97-4213-ad75-52dd36bc6e3a
+      x-ms-copy-status:
+      - success
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:13 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: HEAD
+    uri: https://clitest000002.file.core.windows.net/share000004/dir2/destination_file.txt
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '524288'
+      content-type:
+      - application/octet-stream
+      date:
+      - Mon, 28 Sep 2020 19:32:13 GMT
+      etag:
+      - '"0x8D863E533893D83"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:13 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-copy-completion-time:
+      - Mon, 28 Sep 2020 19:32:13 GMT
+      x-ms-copy-id:
+      - 8da09398-bc97-4213-ad75-52dd36bc6e3a
+      x-ms-copy-progress:
+      - 524288/524288
+      x-ms-copy-source:
+      - https://clitests4rrdxjs57j77fsv6.file.core.windows.net/sharebeemeulgnu5haeailjn/dir1/source_file.txt
+      x-ms-copy-status:
+      - success
+      x-ms-server-encrypted:
+      - 'true'
+      x-ms-type:
+      - File
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-copy-source:
+      - https://clitests4rrdxjs57j77fsv6.file.core.windows.net/sharebeemeulgnu5haeailjn/dir1/source_file.txt
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:14 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000004/dir2/destination_file.txt
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Mon, 28 Sep 2020 19:32:14 GMT
+      etag:
+      - '"0x8D863E5341458AC"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:14 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-copy-id:
+      - a0438415-0ced-4930-a55e-4853acf7f84f
+      x-ms-copy-status:
+      - success
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:14 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: HEAD
+    uri: https://clitest000002.file.core.windows.net/share000004/dir2/destination_file.txt
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '524288'
+      content-type:
+      - application/octet-stream
+      date:
+      - Mon, 28 Sep 2020 19:32:14 GMT
+      etag:
+      - '"0x8D863E5341458AC"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:14 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-copy-completion-time:
+      - Mon, 28 Sep 2020 19:32:14 GMT
+      x-ms-copy-id:
+      - a0438415-0ced-4930-a55e-4853acf7f84f
+      x-ms-copy-progress:
+      - 524288/524288
+      x-ms-copy-source:
+      - https://clitests4rrdxjs57j77fsv6.file.core.windows.net/sharebeemeulgnu5haeailjn/dir1/source_file.txt
+      x-ms-copy-status:
+      - success
+      x-ms-server-encrypted:
+      - 'true'
+      x-ms-type:
+      - File
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Azure-Storage/2.0.0-2.0.1 (Python CPython 3.8.5; Windows 10) AZURECLI/2.11.1
+      x-ms-copy-source:
+      - https://clitests4rrdxjs57j77fsv6.file.core.windows.net/sharebeemeulgnu5haeailjn/dir1%5Csource_file.txt
+      x-ms-date:
+      - Mon, 28 Sep 2020 19:32:15 GMT
+      x-ms-version:
+      - '2018-11-09'
+    method: PUT
+    uri: https://clitest000002.file.core.windows.net/share000004/dir2/destination_file.txt
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Mon, 28 Sep 2020 19:32:15 GMT
+      etag:
+      - '"0x8D863E534741637"'
+      last-modified:
+      - Mon, 28 Sep 2020 19:32:15 GMT
+      server:
+      - Windows-Azure-File/1.0 Microsoft-HTTPAPI/2.0
+      x-ms-copy-id:
+      - f85e5ab6-d003-4ca7-9764-6087e3a8b39d
+      x-ms-copy-status:
+      - success
+      x-ms-version:
+      - '2018-11-09'
+    status:
+      code: 202
+      message: Accepted
+version: 1
