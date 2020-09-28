@@ -1,0 +1,58 @@
+interactions:
+- request:
+    body: '{"properties": {"template": {"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0", "parameters": {}, "variables": {}, "resources":
+      [{"type": "Microsoft.Compute/availabilitySets", "name": "availset-test-conv",
+      "location": "westus2", "tags": {}, "apiVersion": "2020-06-01", "properties":
+      {"platformFaultDomainCount": 3}, "sku": {"name": "Classic"}}], "outputs": {}},
+      "parameters": {}, "mode": "Incremental"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vm availability-set create
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '475'
+      Content-Type:
+      - application/json; charset=utf-8
+      ParameterSetName:
+      - -g -n --unmanaged --platform-fault-domain-count -l
+      User-Agent:
+      - python/3.8.5 (Windows-10-10.0.19041-SP0) msrest/0.6.18 msrest_azure/0.6.3
+        azure-mgmt-resource/10.2.0 Azure-SDK-For-Python AZURECLI/2.11.1
+      accept-language:
+      - en-US
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_availset_live000001/providers/Microsoft.Resources/deployments/mock-deployment?api-version=2019-10-01
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_availset_live000001/providers/Microsoft.Resources/deployments/av_set_deploy_racVhFLLpQB0cZ45TsAqlCcc7aoh57zn","name":"av_set_deploy_racVhFLLpQB0cZ45TsAqlCcc7aoh57zn","type":"Microsoft.Resources/deployments","properties":{"templateHash":"252346028564061498","parameters":{},"mode":"Incremental","provisioningState":"Accepted","timestamp":"2020-09-28T16:38:02.3424247Z","duration":"PT0.7454287S","correlationId":"f67dcaeb-23a6-4924-b497-1c73c7120b7d","providers":[{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"availabilitySets","locations":["westus2"]}]}],"dependencies":[]}}'
+    headers:
+      azure-asyncoperation:
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_availset_live000001/providers/Microsoft.Resources/deployments/av_set_deploy_racVhFLLpQB0cZ45TsAqlCcc7aoh57zn/operationStatuses/08586002958038806128?api-version=2019-10-01
+      cache-control:
+      - no-cache
+      content-length:
+      - '724'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 28 Sep 2020 16:38:01 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1199'
+    status:
+      code: 201
+      message: Created
+version: 1

@@ -204,9 +204,7 @@ AZURE_API_PROFILES = {
     },
     '2020-09-01-hybrid': {
         ResourceType.MGMT_STORAGE: '2019-06-01',
-        ResourceType.MGMT_NETWORK: SDKProfile('2018-11-01',{
-            'dnsZones': '2016-04-01'
-        }),
+        ResourceType.MGMT_NETWORK: '2018-11-01',
         ResourceType.MGMT_COMPUTE: SDKProfile('2020-06-01', {
             'resource_skus': '2017-09-01',
             'disks': '2019-07-01',
@@ -216,8 +214,8 @@ AZURE_API_PROFILES = {
         ResourceType.MGMT_RESOURCE_LINKS: '2018-05-01',
         ResourceType.MGMT_RESOURCE_LOCKS: '2016-09-01',
         ResourceType.MGMT_RESOURCE_POLICY: '2016-12-01',
-        ResourceType.MGMT_RESOURCE_RESOURCES: '2018-05-01',
-        ResourceType.MGMT_RESOURCE_SUBSCRIPTIONS: '2019-10-01',
+        ResourceType.MGMT_RESOURCE_RESOURCES: '2019-10-01',
+        ResourceType.MGMT_RESOURCE_SUBSCRIPTIONS: '2016-06-01',
         ResourceType.MGMT_NETWORK_DNS: '2016-04-01',
         ResourceType.MGMT_KEYVAULT: '2019-09-01',
         ResourceType.MGMT_AUTHORIZATION: SDKProfile('2016-09-01', {
@@ -226,11 +224,11 @@ AZURE_API_PROFILES = {
             'policy_definitions': '2016-12-01'
         }),
         ResourceType.DATA_KEYVAULT: '2016-10-01',
-        ResourceType.DATA_STORAGE: '2019-07-07',
-        ResourceType.DATA_STORAGE_BLOB: '2019-07-07',
-        ResourceType.DATA_STORAGE_FILEDATALAKE: '2019-07-07',
-        ResourceType.DATA_STORAGE_FILESHARE: '2019-07-07',
-        ResourceType.DATA_STORAGE_QUEUE: '2019-07-07',
+        ResourceType.DATA_STORAGE: '2018-11-09',
+        ResourceType.DATA_STORAGE_BLOB: '2018-11-09',
+        ResourceType.DATA_STORAGE_FILEDATALAKE: '2018-11-09',
+        ResourceType.DATA_STORAGE_FILESHARE: '2018-11-09',
+        ResourceType.DATA_STORAGE_QUEUE: '2018-11-09',
         ResourceType.DATA_COSMOS_TABLE: '2017-04-17',
         ResourceType.MGMT_APPSERVICE: '2018-02-01',
         ResourceType.MGMT_EVENTHUB: '2018-01-01-preview',
