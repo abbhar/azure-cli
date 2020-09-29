@@ -558,8 +558,6 @@ class VMAttachDisksOnCreate(ScenarioTest):
                  checks=self.check('powerState', 'VM running'))
 
 
-
-
 class VMManagedDiskScenarioTest(ScenarioTest):
 
     @ResourceGroupPreparer(name_prefix='cli_test_managed_disk')

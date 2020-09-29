@@ -781,7 +781,7 @@ class KeyVaultCertificateScenarioTest(ScenarioTest):
             self.check('policy.x509CertificateProperties.validityInMonths', 60),
             self.check('name', 'cert1')
         ])
-   
+
         # delete certificate
         self.cmd('keyvault certificate delete --vault-name {kv} -n cert1')
 
