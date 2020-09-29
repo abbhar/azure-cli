@@ -21,7 +21,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/locations/westus/usages?api-version=2019-06-01
   response:
     body:
-      string: '{"value":[{"unit":"Count","currentValue":71,"limit":250,"name":{"value":"StorageAccounts","localizedValue":"Storage
+      string: '{"value":[{"unit":"Count","currentValue":92,"limit":250,"name":{"value":"StorageAccounts","localizedValue":"Storage
         Accounts"}}]}'
     headers:
       cache-control:
@@ -31,7 +31,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 28 Sep 2020 17:12:40 GMT
+      - Tue, 29 Sep 2020 05:53:24 GMT
       expires:
       - '-1'
       pragma:

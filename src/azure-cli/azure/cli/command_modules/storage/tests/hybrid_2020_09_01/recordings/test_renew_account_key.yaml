@@ -32,7 +32,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 28 Sep 2020 17:05:47 GMT
+      - Tue, 29 Sep 2020 05:53:34 GMT
       expires:
       - '-1'
       pragma:
@@ -78,7 +78,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Storage/storageAccounts/clitest000002/regenerateKey?api-version=2019-06-01
   response:
     body:
-      string: '{"keys":[{"keyName":"key1","value":"qNvk+dZQQwYel044mCFqJ7Z51y/77YOn5lvIOoAxQ1jaV1ZugjK4C3fUSrVNUI1kCLRecM5tCc6mcpwgHFdE/Q==","permissions":"FULL"},{"keyName":"key2","value":"veryFakedStorageAccountKey==","permissions":"FULL"}]}'
+      string: '{"keys":[{"keyName":"key1","value":"UhCgjzS5PQzqZVec20BcqauQfUE+NRgODs1pzNHNeuMCns2Fkvyrq4bvCF4lzPKlLiHm79pCPFEcDGLWvU/lbw==","permissions":"FULL"},{"keyName":"key2","value":"veryFakedStorageAccountKey==","permissions":"FULL"}]}'
     headers:
       cache-control:
       - no-cache
@@ -87,7 +87,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 28 Sep 2020 17:05:47 GMT
+      - Tue, 29 Sep 2020 05:53:34 GMT
       expires:
       - '-1'
       pragma:
@@ -133,7 +133,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/clitest.rg000001/providers/Microsoft.Storage/storageAccounts/clitest000002/regenerateKey?api-version=2019-06-01
   response:
     body:
-      string: '{"keys":[{"keyName":"key1","value":"qNvk+dZQQwYel044mCFqJ7Z51y/77YOn5lvIOoAxQ1jaV1ZugjK4C3fUSrVNUI1kCLRecM5tCc6mcpwgHFdE/Q==","permissions":"FULL"},{"keyName":"key2","value":"p/0RRP38EZWUx9N4MnUOBAbFsza9eO9U91d0xEhqSVYsRc815Ombo4j09UMfLa6KlfziX6wTW5RGLcfndrVrWg==","permissions":"FULL"}]}'
+      string: '{"keys":[{"keyName":"key1","value":"UhCgjzS5PQzqZVec20BcqauQfUE+NRgODs1pzNHNeuMCns2Fkvyrq4bvCF4lzPKlLiHm79pCPFEcDGLWvU/lbw==","permissions":"FULL"},{"keyName":"key2","value":"CK79A3EgBcwfwHJ4QnJZU+8xpyV5Yye7ozLhmnzekh2zfx2U0CffO/WlccUnY+AZLCenratI+PWEbURgJtmaww==","permissions":"FULL"}]}'
     headers:
       cache-control:
       - no-cache
@@ -142,7 +142,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 28 Sep 2020 17:05:48 GMT
+      - Tue, 29 Sep 2020 05:53:35 GMT
       expires:
       - '-1'
       pragma:
